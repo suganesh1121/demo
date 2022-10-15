@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<!-- script tags -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
+	<script src="script.js" defer></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+   <title>Coding club EEE</title>
+   <link rel=icon href="logo2.ico" type=image/x-icon>
+  </head>  
+  <!-- <body onload='window.open("https:\/\/raguggg.github.io/Ragu-G/","_self");'> -->
+  <body onload='document.querySelector(".popup").style.display = "block";'>
+	<div id="div1">
+	<div class="top">
+		<img src="logo1.png" alt="" width="66px" height="90px">
+		<div class="title"  data-title-text="Coding club of EEE" id="a1">Coding club of EEE</div>
+		<center><div class="title"  data-title-text="Coding club of EEE" id="a2">Coding club of EEE</div></center>
+
+		
+	</div>
+	<div class="maintab" id="cc">
+		<div id="tabLimit">
+			<h1 id="abc">0</h1>
+		</div>
+	</div>
+  <section class="bg">
+
+	<input id="tab" name="tab" class="form-control" value="0" rows="5" readonly style="display: none;">
+  					<form id="regForm" class="forms" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+						<div id="detials">
+									<div class="col-lg-5 col-md-8 mx-auto shadow border bg-white p-4 rounded" style="margin: -50px;">
+										<h3 class="text-center fw-bold mb-3" id="events"> LOGICIO Basic</h3>
+											<div id="form_alerts"></div>
+											<div class="form-group mb-3">
+												<label for="name" class="form-label">Name</label>
+												<input type="text" id="name" name="name" class="form-control" placeholder="RAGU G" required>
+											</div>
+											<div class="form-group mb-3">
+												<label for="name" class="form-label">Roll No</label>
+												<input type="text" id="roll" name="roll" class="form-control" placeholder="19EEL119" required>
+											</div>
+											<div class="form-group mb-3">
+												<label for="email" class="form-label">Email</label>
+												<input type="email" id="email" name="email" class="form-control" placeholder="ragug.19eee@kongu.edu" required>
+											</div>
+											<label>Year </label><br>
+							<select name="year" id="yr" class="form-select" required>
+								<option value="">Select</option>
+								<option value="II">II</option>
+								<option value="III">III</option>
+							  </select>
+						</div><br><br><br><br>
+						
+
+						<div class="fff">
+							<h2>what is your age</h2><br>
+							<label style="font-size:20px ;"><input type="radio" name="q1" required value="5, 5, 5, 5, 5" class="big"> 10</label><br>
+							<label style="font-size:20px ;"><input type="radio" name="q1" required value="5, 0, 0, 0, 0" class="big"> 20 </label><br>
+							<label style="font-size:20px ;"><input type="radio" name="q1" required value="5, (garbage), (garbage), (garbage), (garbage)" class="big"> 18 </label><br>
+							<label style="font-size:20px ;"><input type="radio" name="q1" required value="(garbage), (garbage), (garbage), (garbage), 5" class="big"> 19</label><br>
+							<hr color="green">
+						</div>
+	
+	
+	<div class="fff">
+							<h2>Where are you from</h2>
+							<label style="font-size:20px ;"><input type="radio" name="q2" required value="math.h" class="big"> tamil nadu </label><br>
+							<label style="font-size:20px ;"><input type="radio" name="q2" required value="stdlib.h" class="big"> erode </label><br>
+							<label style="font-size:20px ;"><input type="radio" name="q2" required value="conio.h" class="big"> kec </label><br>
+							<label style="font-size:20px ;"><input type="radio" name="q2" required value="None of the above." class="big"> None of the above. </label><br>
+							<hr color="green">
+						</div>
+	
+	
+	
+							<button type="submit" class="btn btn-primary btn-block" id="submit" >submit</button>
+						</div>
+  					</form>
+
+
+  </section>
+</div>
+  <div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons">&#xE876;</i>
+				</div>				
+				<h4 class="modal-title w-100">ThankYou!</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">Test submit  successfully </p>
+			</div>
+			<div class="modal-footer">
+				<!-- onclick='window.open("https:\/\/raguggg.github.io/Ragu-G/","_self");' -->
+				<button class="btn btn-success btn-block" data-dismiss="modal" onclick=''>OK</button>
+			</div>
+		</div>
+	</div>
+</div>     
+</div>
+<div class="popup">
+    <h2 style="color: red;">❗Enable FullScreen❗</h2>
+    <p>
+         We recommend that you use full-screen mode.
+         So click the "Enable" button below.
+    </p>
+    <a onclick="full()">Enable</a>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<footer> <center><small>&copy; All rights reserved. <a href="http://ragu.great-site.net/"  target="_blank">RAGU G</a> , Inc.</small></center> </footer> 
+  </body>
+</html>
